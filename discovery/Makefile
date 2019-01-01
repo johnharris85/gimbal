@@ -60,6 +60,7 @@ all-build: $(addprefix build-, $(CLI_PLATFORMS))
 build:
 	@$(MAKE) BIN=kubernetes-discoverer build_bin
 	@$(MAKE) BIN=openstack-discoverer build_bin
+	@$(MAKE) BIN=swarm-discoverer build_bin
 
 build_bin: _output/bin/$(GOOS)/$(GOARCH)/$(BIN)
 
